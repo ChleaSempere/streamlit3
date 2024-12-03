@@ -48,12 +48,12 @@ if st.session_state["authentication_status"]:
     # Menu dans la barre latérale, seulement si connecté
     option = st.sidebar.selectbox(
         "Menu",
-        ["Accueil", "Les photos de mes animaux"]
+        ["Accueil", "Les photos des animaux"]
     )
     # Affichage du contenu selon l'option sélectionnée
     if option == "Accueil":
         accueil()
-    elif option == "Les photos de mon chat":
+    elif option == "Les photos des animaux":
         photos_chat()
 elif st.session_state["authentication_status"] is False:
     st.error("L'username ou le password est/sont incorrect")
