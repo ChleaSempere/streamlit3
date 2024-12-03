@@ -31,17 +31,17 @@ authenticator = Authenticate(
 authenticator.login()
 def accueil():
     st.title("Bienvenue sur la page d'accueil")
-    st.image("https://i.gifer.com/3W7u.gif")  # Lien vers le GIF
+    st.image("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGM5OWJ5Zng2bjB5ODZmampwZ29ybDVhdDduZGVmM3M5bDVpYzNtcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XD9o33QG9BoMis7iM4/giphy.webp") # Lien vers le GIF
 def photos_chat():
-    st.subheader("Les photos de mon chat")
+    st.subheader("Les photos des animaux")
     # Créer des colonnes pour afficher les images sur la même ligne
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.image("https://goodflair.com/app/uploads/2024/07/beautiful-bengal-cat-1536x1024.jpg")
+        st.image("https://static.streamlit.io/examples/cat.jpg")
     with col2:
-        st.image("https://goodflair.com/app/uploads/2024/09/beautiful-bengal-cat-1536x1024.jpg")
+        st.image("https://static.streamlit.io/examples/dog.jpg")
     with col3:
-        st.image("https://www.rustica.fr/images/chat-bengale-bengali-l1200-h0.jpg.webp")
+        st.image("https://static.streamlit.io/examples/owl.jpg")
 if st.session_state["authentication_status"]:
     # Le bouton de déconnexion au-dessus du menu
     authenticator.logout("Déconnexion")
