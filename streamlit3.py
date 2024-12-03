@@ -48,7 +48,7 @@ if st.session_state["authentication_status"]:
     # Menu dans la barre latérale, seulement si connecté
     option = st.sidebar.selectbox(
         "Menu",
-        ["Accueil", "Les photos de mon chat"]
+        ["Accueil", "Les photos de mes animaux"]
     )
     # Affichage du contenu selon l'option sélectionnée
     if option == "Accueil":
